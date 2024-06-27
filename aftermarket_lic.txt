@@ -1,0 +1,35 @@
+Serial Number: 0123456789ABC
+License ID: 0123456789ABC
+Name: aftermarket_lic
+Model: M270
+Version: 2
+Feature: ACCESS_PORTAL@Jan-01-2026
+Feature: APP_CONTROL@Jan-01-2026
+Feature: APT@Jan-01-2026
+Feature: AUTHENTICATED_USER#500
+Feature: AV@Jan-01-2026
+Feature: BOVPN_TUNNEL#50
+Feature: DIMENSION_COMMAND@Jan-01-2026
+Feature: DLP@Jan-01-2026
+Feature: DNSWATCH@Jan-01-2026
+Feature: FIREWARE_XTM
+Feature: FW_RULE#0
+Feature: FW_SPEED#0
+Feature: FW_USERS#0
+Feature: INTELLIGENT_AV@Jan-01-2026
+Feature: IPS@Jan-01-2026
+Feature: L2TP_USER#75
+Feature: LIVESECURITY@Jan-01-2026
+Feature: MUVPN_USER#75
+Feature: NETWORK_DISCOVERY@Jan-01-2026
+Feature: RED@Jan-01-2026
+Feature: SESSION#3400000
+Feature: SPAMBLOCKER@Jan-01-2026
+Feature: SSLVPN_USER#75
+Feature: TDR@Jan-01-2026;EUR
+Feature: VLAN#100
+Feature: VPN_SPEED#0
+Feature: WEBBLOCKER@Jan-01-2026
+Feature: XTM_PRO
+Expiration: never
+Signature: 302e0215020e64bb-b1d53d1d8d499401-8e066376ad984914-470215034bddf3ff-18e599f487627753-8d06e836dd72c1aa
