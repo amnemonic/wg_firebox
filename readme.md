@@ -80,10 +80,11 @@ initrd: Failed.  Shutting down.
 ```
 
 
-### To do
- - Try to disable integrity check. It would decrease security but for homelab that should be reasonably safe solution
- - Make a list of possible entries in license file and name of each possibly with link to official description of service.
- 
+### To do (PRs are welcome)
+- [ ] Try to disable integrity check. It would decrease security but for homelab that should be reasonably safe solution
+- [ ] Make a list of possible entries in license file and name of each possibly with link to official description of service
+- [ ] Be more precise about which version introduced file system integrity check
+
  
 ### Bonus!
 Hard coded bios password for `M270` with bios version V2.02 (04022018) is: `WatchGuard!`. If you were able to confirm that this password works for other WatchGuard's product let me know by opening new issue or just ping me on my twitter or whatever.
