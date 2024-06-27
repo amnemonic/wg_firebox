@@ -1,7 +1,6 @@
 ### About this project
 **This utility is intended solely for hobbyists and enthusiasts for learning and personal enjoyment. It is designed to be used on devices that have reached the end of their lifecycle or support cycle. Please use this tool responsibly and in good faith. Any commercial use, misuse, or use on production on active and supported devices is strictly discouraged.**
 
-<br>
 By using this tool, I hope to encourage the reuse of old, discarded hardware, thereby contributing to the reduction of e-waste. The authors takes no responsibility for any consequences arising from improper use of this utility. Thank you for respecting these guidelines.
 
 
@@ -11,7 +10,6 @@ M270 reached End of Sales (EOS) Date on July 1 of 2023 and quite often you can f
 ### License aka Feature Key
 If the previous owner did factory reset of the device then to restore full firewall functionality you will need license for some fancier things like VPN, Network discovery etc. If you was lucky enough to get hands on not resetted box then pull out mSata drive from the appliance and backup the license file from directory `/licenses/` on the last (biggest) partition on drive. 
 
-<br>
 Feature key is assigned to machine by its serial number and then signed. When you enter license then its signature is checked against public key stored in `/etc/lickey.pem` on third partition:
 
 ```
@@ -40,7 +38,7 @@ openssl ec -in private_key.pem -pubout -out public_key.pem
 ```
 
 
-#### Replace lickey.pem` on firebox filesystem
+#### Replace `lickey.pem` on Firebox filesystem
 Get mSata drive out of Firebox and connect to linux machine. Assuming that disk was recognized as `sda` you can execute following commands:
 ```
 mkdir /mnt/firebox
@@ -87,6 +85,6 @@ initrd: Failed.  Shutting down.
  - Make a list of possible entries in license file and name of each possibly with link to official description of service.
  
  
-### Bonus 
-Hard coded bios password for `M270` with bios version V2.02 (04022018) is `WatchGuard!`. If you were able to confirm that this password works for other WatchGuard's product let me know by opening new issue.
+### Bonus!
+Hard coded bios password for `M270` with bios version V2.02 (04022018) is: `WatchGuard!`. If you were able to confirm that this password works for other WatchGuard's product let me know by opening new issue or just ping me on my twitter or whatever.
 
