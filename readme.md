@@ -51,7 +51,7 @@ umount /dev/sda3
 
 
 #### Sign License
-Edit `aftermarket_lic.txt` file, eg. set your serial number and machine name and license items and dates then run python script:
+Edit [`aftermarket_lic.txt`](https://github.com/amnemonic/wg_firebox/blob/main/aftermarket_lic.txt) file, eg. set your serial number and machine name and license items and dates then run python script:
 ```
 sign_feature_key.py aftermarket_lic.txt private_key.pem
 ```
