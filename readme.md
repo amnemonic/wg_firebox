@@ -44,10 +44,12 @@ Get mSata drive out of Firebox and connect to linux machine. Assuming that disk 
 mkdir /mnt/firebox
 mount /dev/sda3 /mnt/firebox
 cat public_key.pem > /mnt/firebox/etc/lickey.pem
+sed -i -e "s/Product = utm/Product = base/" /mnt/firebox/info.txt
 umount /dev/sda3
 ```
 
-`public_key.pem` is public key generated in previous paragraph
+- `public_key.pem` is public key generated in previous paragraph
+- Replacement of `Product = utm` to `Product = base` is necessary to disable signature check in OS Version **12.5.9 Update 2** and newer. See #3
 
 
 #### Sign License
@@ -73,17 +75,9 @@ Upload license using "Update Feature Key" option in your appliance.
  - this method was tested only on my `M270` but it can be safely assumed that it should work also for `M370` `M470` `M570` and `M670`.
  - we have [info](https://github.com/amnemonic/wg_firebox/issues/2) that it works also on `XTM520` and `M200`
  - you can generate license with valid `LiveSecurity Service` and therefore upgrade Fireware OS to newer version however you have to repeat procedure of replacing `lickey.pem` because our modded key will be replaced to stock one by updater. 
- - Unfortunately starting from version **12.5.9 Update 2 and higher** of Fireware OS, WatchGuard introduced [integrity check](http://www.watchguard.com/help/docs/help-center/en-US/content/en-us/Fireware/system_status/stats_diagnostics_integrity_checks.html) of file system and when you replace `lickey.pem` then kernel will throw following error:
-```
-Signature did not verify
-Error: integrity check failed
-initrd: Failed.  Shutting down.
-```
-
- - Latest version which can be patched this way is [12.5.4](http://ftp.watchguard.jp/Partner/Software/XTM-Firebox/Firebox-M270-M370-470-570-670/12.5.4/)
 
 ### To do (PRs are welcome)
-- [ ] Try to disable integrity check. It would decrease security but for homelab that should be reasonably safe solution
+- [x] Try to disable integrity check. It would decrease security but for homelab that should be reasonably safe solution
 - [ ] Make a list of possible entries in license file and name of each possibly with link to official description of service
 - [x] Be more precise about which version introduced file system integrity check
 
