@@ -78,7 +78,7 @@ Upload license using "Update Feature Key" option in your appliance.
 
 ### To do (PRs are welcome)
 - [x] Try to disable integrity check. It would decrease security but for homelab that should be reasonably safe solution
-- [ ] Make a list of possible entries in license file and name of each possibly with link to official description of service
+- [x] Make a list of possible entries in license file and name of each possibly with link to official description of service
 - [x] Be more precise about which version introduced file system integrity check
 
  
